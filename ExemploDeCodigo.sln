@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExemploBlockchain", "Exempl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineBlockchain", "MineBlockchain\MineBlockchain.csproj", "{27C1EB28-82B0-4481-8DCC-4AD8F44AB9E4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrincipioSOLID", "PrincipioSOLID", "{D599BB40-A029-4E5F-ADB1-F368F075CDCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desig.PattersPrincipio.S.O.L.I.D", "Console.Principio.S.O.L.I.D\Desig.PattersPrincipio.S.O.L.I.D.csproj", "{921FAFCC-97C2-427B-B20F-4775D050CEBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,10 @@ Global
 		{27C1EB28-82B0-4481-8DCC-4AD8F44AB9E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27C1EB28-82B0-4481-8DCC-4AD8F44AB9E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27C1EB28-82B0-4481-8DCC-4AD8F44AB9E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{921FAFCC-97C2-427B-B20F-4775D050CEBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{921FAFCC-97C2-427B-B20F-4775D050CEBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{921FAFCC-97C2-427B-B20F-4775D050CEBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{921FAFCC-97C2-427B-B20F-4775D050CEBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{DFCC335E-AA84-4657-996B-0026AA0A7A16} = {27BA55A7-43EB-452A-AF22-4582852DCEE5}
 		{896D018B-F2D6-43E8-95B4-0BDD807BFA74} = {6EE460EE-2790-4187-8FB0-F8D81B6EB511}
 		{27C1EB28-82B0-4481-8DCC-4AD8F44AB9E4} = {2E59DF67-77E9-44E4-BB61-0E383B8D9B33}
+		{921FAFCC-97C2-427B-B20F-4775D050CEBF} = {D599BB40-A029-4E5F-ADB1-F368F075CDCF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {15A59441-E797-4743-A49A-8168566CEEFE}
