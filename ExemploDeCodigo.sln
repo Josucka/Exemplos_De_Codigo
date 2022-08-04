@@ -17,7 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineBlockchain", "MineBlock
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrincipioSOLID", "PrincipioSOLID", "{D599BB40-A029-4E5F-ADB1-F368F075CDCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desig.PattersPrincipio.S.O.L.I.D", "Console.Principio.S.O.L.I.D\Desig.PattersPrincipio.S.O.L.I.D.csproj", "{921FAFCC-97C2-427B-B20F-4775D050CEBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desig.PattersPrincipio.S.O.L.I.D", "Console.Principio.S.O.L.I.D\Desig.PattersPrincipio.S.O.L.I.D.csproj", "{921FAFCC-97C2-427B-B20F-4775D050CEBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PacManConsole", "PacManConsole", "{7EBC08BD-160D-4477-8824-E0A9BDC2E433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacMan", "PacMan\PacMan.csproj", "{BAF4AED5-AD61-43F5-BED9-E7B35A7EC4AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,10 @@ Global
 		{921FAFCC-97C2-427B-B20F-4775D050CEBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{921FAFCC-97C2-427B-B20F-4775D050CEBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{921FAFCC-97C2-427B-B20F-4775D050CEBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAF4AED5-AD61-43F5-BED9-E7B35A7EC4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAF4AED5-AD61-43F5-BED9-E7B35A7EC4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAF4AED5-AD61-43F5-BED9-E7B35A7EC4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAF4AED5-AD61-43F5-BED9-E7B35A7EC4AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{896D018B-F2D6-43E8-95B4-0BDD807BFA74} = {6EE460EE-2790-4187-8FB0-F8D81B6EB511}
 		{27C1EB28-82B0-4481-8DCC-4AD8F44AB9E4} = {2E59DF67-77E9-44E4-BB61-0E383B8D9B33}
 		{921FAFCC-97C2-427B-B20F-4775D050CEBF} = {D599BB40-A029-4E5F-ADB1-F368F075CDCF}
+		{BAF4AED5-AD61-43F5-BED9-E7B35A7EC4AE} = {7EBC08BD-160D-4477-8824-E0A9BDC2E433}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {15A59441-E797-4743-A49A-8168566CEEFE}
