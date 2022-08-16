@@ -29,7 +29,7 @@ namespace PacMan.Jogo
 
         public void Load(string filePath)
         {
-            var text = File.ReadAllText(filePath);
+            var text = File.ReadAllText(filePath); // resolver problema em ler o map.txt
             //remove to fix OS compatibility
             text = text.Replace("\r", "");
             var list = text.Split('\n');
