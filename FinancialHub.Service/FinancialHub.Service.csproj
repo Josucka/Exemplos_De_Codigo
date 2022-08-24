@@ -50,7 +50,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AccountBalanceService.cs" />
     <Compile Include="Services\AccountsService.cs" />
-    <Compile Include="Services\BalanceService.cs" />
+    <Compile Include="Services\BalancesService.cs" />
     <Compile Include="Services\CategoriesService.cs" />
     <Compile Include="Services\TransactionsService.cs" />
   </ItemGroup>
