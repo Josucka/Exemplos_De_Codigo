@@ -35,7 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FinancialHub", "FinancialHu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyFinancialHub", "MyFinancialHub", "{7EBD15A5-FB01-4D6B-BCAC-3AA0DA335F8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialHub.WebApplic", "FinancialHub.WebApplic\FinancialHub.WebApplic.csproj", "{1613A50C-4627-4DAF-BF9B-281F04FDFFAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.WebApplic", "FinancialHub.WebApplic\FinancialHub.WebApplic.csproj", "{1613A50C-4627-4DAF-BF9B-281F04FDFFAA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialHub.Service", "FinancialHub.Service\FinancialHub.Service.csproj", "{8C43FCCB-EAA8-4520-B4CA-96FC3ABD4399}"
 EndProject
@@ -45,15 +45,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialHub.Domain", "Fina
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestNUnit", "TestNUnit", "{8804A263-58D4-482E-B215-D1262BD301A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialHub.WebApplic.Test", "FinancialHub.WebApplic.Test\FinancialHub.WebApplic.Test.csproj", "{D59DEBBD-1697-4B7E-8E38-3DA2B9FADEB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.WebApplic.Test", "FinancialHub.WebApplic.Test\FinancialHub.WebApplic.Test.csproj", "{D59DEBBD-1697-4B7E-8E38-3DA2B9FADEB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialHub.Service.Test", "FinancialHub.Service.Test\FinancialHub.Service.Test.csproj", "{67048C6C-4D2A-46A7-BBC8-7B1408523235}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Service.Test", "FinancialHub.Service.Test\FinancialHub.Service.Test.csproj", "{67048C6C-4D2A-46A7-BBC8-7B1408523235}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialHub.Integration.Test", "FinancialHub.Integration.Test\FinancialHub.Integration.Test.csproj", "{3701EC13-F4ED-4322-A9D2-075E0011B5D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Integration.Test", "FinancialHub.Integration.Test\FinancialHub.Integration.Test.csproj", "{3701EC13-F4ED-4322-A9D2-075E0011B5D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialHub.Data.Test", "FinancialHub.Data.Test\FinancialHub.Data.Test.csproj", "{5A0B6835-ADD7-4776-847B-B2F756EFFCA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Data.Test", "FinancialHub.Data.Test\FinancialHub.Data.Test.csproj", "{5A0B6835-ADD7-4776-847B-B2F756EFFCA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialHub.Domain.Test", "FinancialHub.Domain.Test\FinancialHub.Domain.Test.csproj", "{8E43B17B-4A2C-43D2-B9E8-E9A488D85596}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Domain.Test", "FinancialHub.Domain.Test\FinancialHub.Domain.Test.csproj", "{8E43B17B-4A2C-43D2-B9E8-E9A488D85596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialHub.Infra.Data", "FinancialHub.Infra.Data\FinancialHub.Infra.Data.csproj", "{62A8A5DB-B36C-4C43-8C63-9815F42AF42F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +127,10 @@ Global
 		{8E43B17B-4A2C-43D2-B9E8-E9A488D85596}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E43B17B-4A2C-43D2-B9E8-E9A488D85596}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E43B17B-4A2C-43D2-B9E8-E9A488D85596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62A8A5DB-B36C-4C43-8C63-9815F42AF42F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62A8A5DB-B36C-4C43-8C63-9815F42AF42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62A8A5DB-B36C-4C43-8C63-9815F42AF42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62A8A5DB-B36C-4C43-8C63-9815F42AF42F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,6 +154,7 @@ Global
 		{3701EC13-F4ED-4322-A9D2-075E0011B5D1} = {8804A263-58D4-482E-B215-D1262BD301A4}
 		{5A0B6835-ADD7-4776-847B-B2F756EFFCA9} = {8804A263-58D4-482E-B215-D1262BD301A4}
 		{8E43B17B-4A2C-43D2-B9E8-E9A488D85596} = {8804A263-58D4-482E-B215-D1262BD301A4}
+		{62A8A5DB-B36C-4C43-8C63-9815F42AF42F} = {7EBD15A5-FB01-4D6B-BCAC-3AA0DA335F8B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {15A59441-E797-4743-A49A-8168566CEEFE}

@@ -1,16 +1,15 @@
-﻿using FinancialHub.Data.Repositories;
-using FinancialHub.Domain.Interfaces.Mappers;
-using FinancialHub.Domain.Interfaces.Repositories;
+﻿using FinancialHub.Domain.Interfaces.Repositories;
 using FinancialHub.Domain.Interfaces.Services;
-using FinancialHub.Domain.Models;
-using FinancialHub.Service.Mappers;
 using FinancialHub.Service.Services;
-using FinancialHub.WebApplic.Validators;
-using FluentValidation;
-using FluentValidation.AspNetCore;
+
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.Extensions.DependencyInjection;
+using FinancialHub.Domain.Interfaces.Mappers;
+using FinancialHub.Service.Mappers;
+using FluentValidation;
+using FinancialHub.Domain.Models;
+using FinancialHub.Data.Repositories;
+using FinancialHub.WebApplic.Validators;
 
 namespace FinancialHub.WebApplic.Configurations
 {
@@ -45,7 +44,7 @@ namespace FinancialHub.WebApplic.Configurations
 
             services.AddScoped<IAccountsService, AccountsService>();
             services.AddScoped<ICategoriesService, CategoriesService>();
-          //  services.AddScoped<ITransactionsService, TransactionsService>();
+            //services.AddScoped<ITransactionsService, TransactionsService>();
             services.AddScoped<IBalancesService, BalancesService>();
 
             services.AddScoped<IAccountBalanceService, AccountBalanceService>();
