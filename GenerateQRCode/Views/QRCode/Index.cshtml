@@ -1,0 +1,125 @@
+﻿@model GenerateQRCode.Models.QRCodeModel
+
+@{
+    ViewData["Title"] = "Generate QR Code";
+}
+<form asp-action="Index">
+    <div class="row mt-2">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <label>Select QR Code Type</label>
+            <select asp-for="QRCodeType" id="QRCodeType" class="form-control" onchange="onQRCodeTypeChange()">
+                <option value="1">Website</option>
+                <option value="2">Bookmark URL</option>
+                <option value="3">SMS</option>
+                <option value="4">WhatsApp</option>
+                <option value="5">Email</option>
+                <option value="6">WIFI</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="row mt-2 hideDiv" id="DIV1">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <label>Enter your website URL</label>
+            <input autocomplete="off" type="url" asp-for="WebsiteURL" class="form-control"/>
+        </div>
+    </div>
+    <div class="row mt-2 hideDiv" id="DIV2">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <label>Enter your URL</label>
+            <input autocomplete="off" type="url" asp-for="BookmarkURL" class="form-control"/>
+        </div>
+    </div>
+    <div class="hideDiv" id="DIV3">
+        <div class="row mt-2">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Enter phone Number with country code(eg. +55)</label>
+                <input autocomplete="off" type="text" asp-for="SMSPhoneNumber" class="form-control"/>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Enter your Message</label>
+                <textarea asp-for="SMSBody" class="form-control"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="hideDiv" id="DIV4">
+        <div class="row mt-2">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Enter WhatsApp Number with country code(eg. +55)</label>
+                <input autocomplete="off" type="text" asp-for="WhatsAppNumber" class="form-control"/>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Enter your Message</label>
+                <textarea asp-for="WhatsAppNumber" class="form-control"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="hideDiv" id="DIV5">
+        <div class="row mt-2">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Enter Receive's Email Address</label>
+                <input autocomplete="off" type="text" asp-for="ReceiverEmailAddress" class="form-control"/>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Enter Email Subject</label>
+                <input autocomplete="off" type="text" asp-for="EmailSubject" class="form-control" />
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Enter Email Message</label>
+                <textarea asp-for="EmailMessage" class="form-control"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="hideDiv" id="DIV6">
+        <div class="row mt-2">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Enter WIFI Name</label>
+                <input autocomplete="off" type="text" asp-for="WIFIName" class="form-control"/>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label>Enter WIFI Password</label>
+                <input autocomplete="off" type="text" asp-for="WIFIPassword" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <button type="submit" class="btn btn-primary">Generate</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.QRImageURL))
+    {
+        <div class="row mt-2" id="qrCodeImage">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img height="250" width="250" scr="@Model.QRImageURL" />
+            </div>
+        </div>
+    }
+</form>
+
+        section Scripts{
+            <script>
+                $(document).ready(function(){
+                    $("#QRcodeType").tigger("change");
+                });
+
+                function onQRCodeTypeChange(){
+                    let qrcodeType = $("#QRCodeType").val();
+                    $(".hideDiv").hide();
+                    $("#DIV" + qrcodeType).show();
+                }
+            </script>
+        }
